@@ -1,0 +1,25 @@
+From fdfb6b154bf503d78e2d740a7ab54ad5b20a8b95 Mon Sep 17 00:00:00 2001
+From: Axel Gembe <derago@gmail.com>
+Date: Sun, 18 Oct 2020 14:34:13 +0700
+Subject: [PATCH] Default to js52
+
+---
+ src/core.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/core.sh b/src/core.sh
+index f62155c7..72e90c19 100644
+--- a/src/core.sh
++++ b/src/core.sh
+@@ -28,7 +28,7 @@ declare -r PLOWSHARE_API_VERSION=6
+ declare -r PLOWSHARE_CONFDIR="${XDG_CONFIG_HOME:-$HOME/.config}/plowshare"
+ 
+ # Dependencies
+-declare -r PLOWCORE_JS=${PLOWSHARE_JS:-js}
++declare -r PLOWCORE_JS=${PLOWSHARE_JS:-js52}
+ declare -r PLOWCORE_CURL=${PLOWSHARE_CURL:-curl}
+ 
+ # Global error codes
+-- 
+2.28.0
+
